@@ -58,4 +58,4 @@ for k, v in weights_state_dict.items():
 del new_ckpt["head.weight"]
 del new_ckpt["head.bias"]
 model.load_state_dict(new_ckpt)
-torch.save("pretrained_model/van/tiny_changed.pth.tar", new_ckpt)
+torch.save(new_ckpt, "pretrained_model/van/tiny_changed.pth.tar")
